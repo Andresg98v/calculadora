@@ -1,0 +1,67 @@
+*{
+    font-family: 'https://kinsta.com/es/blog/fuentes-seguras-para-la-web/#9-consolas',serif;
+    color: rgb(255, 253, 253);
+}
+body{
+    margin: 0;
+    background-color: rgb(54, 21, 85);
+    background-image: url("cielo3.avif");
+}
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.calculadora {
+    display: grid;
+    grid-template-columns: repeat(4, 75px);
+    grid-template-rows: 160px repeat(5, 75px);
+    background-color: blueviolet;
+    background-image: url("imagen1.jpg");
+    padding: 15px;
+    border-radius: 32px;
+    box-shadow: 15px 10px 0px 5px black;
+}
+
+button{
+    cursor: pointer;
+    margin: 5px;
+    padding: 0;
+    border-radius: 32px;
+    font-size: 1.5em;
+    border: none;
+    background-color: rgb(54, 21, 85); 
+    background-image: url("imagen1.jpg");
+    box-shadow: 5px 5px 10px -3px black, -5px -5px 15px 3px rgb(39, 37, 37);
+}
+
+button:active{
+    background-color: aqua;
+}
+button:focus{
+    outline: none;
+}
+.col-2{
+    grid-column: span 2;
+}
+.display {
+    grid-column: 1 /-1;
+    padding: 16px;
+    display: flex;
+    margin: 35px 7px 20px;
+    flex-direction: column;
+    align-items: flex-end;
+    background-color: black;
+    border-radius: 32px;
+    text-align: right;
+    justify-content: space-between;
+    word-break: break-all;
+    box-shadow:  0px 0px 0px 10px rgb(51, 50, 50);
+}
+#valor-actual{
+    font-size: 1.5em;
+}
+#valor-anterior{
+    font-size: 2em; 
+}
