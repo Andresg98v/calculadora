@@ -10,5 +10,5 @@ botonesNumeros.forEach(boton =>{
     boton.addEventListener('click',() => display.agregarNumero(boton.innerHTML));
 });
 botonesOperadores.forEach(boton =>{
-    boton.addEventListener('click',() => display.agregarcomputar(boton.value))
+    boton.addEventListener('click',() => display.agregarComputar(boton.value))
 });
