@@ -7,40 +7,40 @@ body{
     background-color: rgb(54, 21, 85);
     background-image: url("cielo3.avif");
 }
-.container {
+.container { /* forma la calculadora*/
     display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
+    justify-content: center;/* centra el contenido en la pagina*/
+    align-items: center; /* a linea todo centrado*/
+    height: 100vh; /* */
 }
 .calculadora {
-    display: grid;
-    grid-template-columns: repeat(4, 75px);
-    grid-template-rows: 160px repeat(5, 75px);
-    background-color: blueviolet;
-    background-image: url("imagen1.jpg");
-    padding: 15px;
-    border-radius: 32px;
-    box-shadow: 15px 10px 0px 5px black;
+    display: grid; /* para colocar botones*/
+    grid-template-columns: repeat(4, 75px);/* crear 4 columnas que se repiten con un tamaño de 75px */
+    grid-template-rows: 160px repeat(5, 75px);/* se crea rows para el display 1. alto total del display y un repeat de vuelta para el resto de rows que en este caso son 5*/
+    background-color: blueviolet; 
+    background-image: url("imagen1.jpg");/* imagen de fondo calculadora*/
+    padding: 15px; /*cantidad de espacio entre el borde y el contenido del elemento*/
+    border-radius: 32px;/*crear esquinas redondeadas.*/
+    box-shadow: 15px 10px 0px 5px black;/*sombra*/
 }
 
 button{
-    cursor: pointer;
+    cursor: pointer;/*puntero*/
     margin: 5px;
     padding: 0;
     border-radius: 32px;
     font-size: 1.5em;
     border: none;
     background-color: rgb(54, 21, 85); 
-    background-image: url("imagen1.jpg");
+    background-image: url("imagen1.jpg");/*fondo de botones */
     box-shadow: 5px 5px 10px -3px black, -5px -5px 15px 3px rgb(39, 37, 37);
 }
 
 button:active{
-    background-color: aqua;
+    background-color: rgb(57, 2, 145);
 }
 button:focus{
-    outline: none;
+    outline: none; /*quita el clickeo por defecto*/
 }
 .col-2{
     grid-column: span 2;
@@ -49,7 +49,7 @@ button:focus{
     grid-column: 1 /-1;
     padding: 16px;
     display: flex;
-    margin: 35px 7px 20px;
+    margin: 35px 10px 20px;
     flex-direction: column;
     align-items: flex-end;
     background-color: black;
@@ -60,8 +60,8 @@ button:focus{
     box-shadow:  0px 0px 0px 10px rgb(51, 50, 50);
 }
 #valor-actual{
-    font-size: 1.5em;
+    font-size: 2.5em;
 }
 #valor-anterior{
-    font-size: 2em; 
+    font-size: 1em; 
 }
