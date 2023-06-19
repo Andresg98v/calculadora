@@ -1,67 +1,50 @@
-*{
-    font-family: 'https://kinsta.com/es/blog/fuentes-seguras-para-la-web/#9-consolas',serif;
-    color: rgb(255, 253, 253);
+
+.calculadora{
+    display:block;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: blue;
+    background-image: url("imagen1.jpg");
+    width: 515px;
+    height: 600px;
+    border-radius: 32px;
+    box-shadow: 5px 5px 15px -3px rgb(168, 8, 8), -5px -5px 15px 3px rgb(219, 38, 38);    
 }
+.calculadora td button{
+    display: block;
+    width: 90px;
+    height: 80px;
+    font-size: 25px;
+    box-shadow: 7px 7px 15px -4px rgb(147, 27, 177), -5px -5px 15px 3px rgb(168, 21, 168);
+}
+
+
+
+#calculador{
+    display: block;
+    margin: 10px 10px 10px;
+    text-align:right;
+    font-size: 70px;
+    margin-bottom: 50px;
+    width: 450px;
+    height: 170px;
+    line-height: 150px;
+    background-color: rgb(2, 3, 3);
+    border-radius: 30px;
+    box-shadow: 7px 7px 15px -4px rgb(147, 27, 177), -5px -5px 15px 3px rgb(168, 21, 168);
+    overflow-y:hidden;
+}
+button{
+    border-radius: 32px;
+    background-image: url("imagen1.jpg");
+    box-shadow: 5px 5px 10px -3px black, -5px -5px 15px 3px rgb(39, 37, 37);
+    
+}
+
 body{
-    margin: 0;
-    background-color: rgb(54, 21, 85);
     background-image: url("cielo3.avif");
 }
-.container { /* forma la calculadora*/
-    display: flex;
-    justify-content: center;/* centra el contenido en la pagina*/
-    align-items: center; /* a linea todo centrado*/
-    height: 100vh; /* */
-}
-.calculadora {
-    display: grid; /* para colocar botones*/
-    grid-template-columns: repeat(4, 75px);/* crear 4 columnas que se repiten con un tamaño de 75px */
-    grid-template-rows: 160px repeat(5, 75px);/* se crea rows para el display 1. alto total del display y un repeat de vuelta para el resto de rows que en este caso son 5*/
-    background-color: blueviolet; 
-    background-image: url("imagen1.jpg");/* imagen de fondo calculadora*/
-    padding: 15px; /*cantidad de espacio entre el borde y el contenido del elemento*/
-    border-radius: 32px;/*crear esquinas redondeadas.*/
-    box-shadow: 15px 10px 0px 5px black;/*sombra*/
-}
-
-button{
-    cursor: pointer;/*puntero*/
-    margin: 5px;
-    padding: 0;
-    border-radius: 32px;
-    font-size: 1.5em;
-    border: none;
-    background-color: rgb(54, 21, 85); 
-    background-image: url("imagen1.jpg");/*fondo de botones */
-    box-shadow: 5px 5px 10px -3px black, -5px -5px 15px 3px rgb(39, 37, 37);
-}
-
-button:active{
-    background-color: rgb(57, 2, 145);
-}
-button:focus{
-    outline: none; /*quita el clickeo por defecto*/
-}
-.col-2{
-    grid-column: span 2;
-}
-.display {
-    grid-column: 1 /-1;
-    padding: 16px;
-    display: flex;
-    margin: 25px 10px 20px;
-    flex-direction: column;
-    align-items: flex-end;
-    background-color: black;
-    border-radius: 32px;
-    text-align: right;
-    justify-content: space-between;
-    word-break: break-all;
-    box-shadow:  0px 0px 0px 10px rgb(51, 50, 50);
-}
-#valor-actual{
-    font-size: 2.5em;
-}
-#valor-anterior{
-    font-size: 1em; 
+*{
+    font-family: 'https://kinsta.com/es/blog/fuentes-seguras-para-la-web/#9-consolas',serif;
+    color: rgb(250, 250, 250);
 }
