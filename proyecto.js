@@ -52,7 +52,7 @@ function init (){
     cero.onclick = function(e){
         calculador.textContent=calculador.textContent +"0";
     }
-   
+
     reset.onclick = function(e){
         resetear();
     }
@@ -107,6 +107,7 @@ function resolver(){
         case "/":
             res=parseFloat(operandoa)/parseFloat(operandob);
             break;
+            
     }
     resetear();
     calculador.textContent=res;

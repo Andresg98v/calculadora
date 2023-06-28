@@ -6,7 +6,7 @@
     background-color: blue;
     background-image: url("imagen1.jpg");
     width: 515px;
-    height: 600px;
+    height: 650px;
     border-radius: 32px;
     box-shadow: 5px 5px 15px -3px rgb(168, 8, 8), -5px -5px 15px 3px rgb(219, 38, 38);    
 }
@@ -15,7 +15,7 @@
     width: 90px;
     height: 80px;
     font-size: 25px;
-    box-shadow: 7px 7px 15px -4px rgb(147, 27, 177), -5px -5px 15px 3px rgb(168, 21, 168);
+    box-shadow: 7px 7px 15px -4px rgb(122, 27, 177), -5px -5px 15px 3px rgb(168, 21, 168);
 }
 
 
